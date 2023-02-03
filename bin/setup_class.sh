@@ -50,4 +50,10 @@ echo "=> 🔰 Testing basic course..."
 echo "=> 🦾 Testing advanced course..."
 "${ROOT_DIR}/bin/advanced_script.sh" > /dev/null
 
-echo "Done! Everything should be ready to go!"
+echo "=> 🧹 Cleaning up..."
+rm -f "${ROOT_DIR}/inputs/"*
+rm -f "${ROOT_DIR}/work/"*
+rm -f "${ROOT_DIR}/outputs/"*
+
+echo
+echo "Done! Everything should be ready to go! 🚀"
