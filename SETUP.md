@@ -31,6 +31,9 @@ If those assumptions hold, you should be good to follow these steps:
    the repo rather than cloning it you will see a warning. If that was
    intentional then feel free to disregard the warning.
 
+If the setup script completes successfully and tells you that everything works
+then you should be good to go!
+
 ### In case the setup script fails
 
 Here's everything that the setup script does in case you need to do it by hand
