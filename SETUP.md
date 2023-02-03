@@ -22,7 +22,7 @@ If those assumptions hold, you should be good to follow these steps:
 
 1. Clone this repo into the appropriate place. This is the directory we'll be
    working in.
-2.  Run the install/verification script from the root of the repo:
+2. Run the install/verification script from the root of the repo:
    ```shell
    bin/setup_class.sh
    ```
