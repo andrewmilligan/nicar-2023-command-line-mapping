@@ -7,6 +7,23 @@ a look at several different mapping file formats, talk about their pros and
 cons, and see how JSON-based map formats open up a world of exciting
 possibilities by letting us manipulate maps from scriptable tools.
 
+## 0. Configure your shell
+
+Before we start we need to configure our shell a little bit. This is specific
+to the context of our hands-on class at NICAR and isn't something you would
+generally need to do.
+
+```shell
+source bin/configure_shell.sh
+```
+
+Just in case your command prompt now looks super funky and messed up you can
+run this instead but you shouldn't have to!
+
+```shell
+source bin/configure_basic_shell.sh
+```
+
 ## 1. Get your data
 
 Normally you would come to a project with a dataset that you are trying to map,
