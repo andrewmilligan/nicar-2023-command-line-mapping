@@ -1,5 +1,45 @@
-Necessary Dependencies
-======================
+Setup Notes
+===========
+
+These are instructions on how to set this course up ahead of time in
+a computer lab setting.
+
+## Setup Steps
+
+First, a couple of assumptions:
+
+* You're running this on a Mac with a terminal and all the basic command-line
+tools setup (namely `bash`, `git`, `curl`, `zip`). Bash does _not_ need to
+be the default shell, but it _does_ need to be installed, which should be
+true out of the box.
+* You have a network connection to clone a repo from GitHub and download
+a few data files.
+* You have a version of Node installed (at least major version 16, e.g.
+  `v16.15.0`, but more recent is fine if a more recent version is already
+  available on the machine).
+
+If those assumptions hold, you should be good to follow these steps:
+
+1. Clone this repo into the appropriate place. This is the directory we'll be
+   working in.
+2.  Run the install/verification script from the root of the repo:
+   ```shell
+   bin/setup_class.sh
+   ```
+   That should grab all the necessary data files, put them in the right place,
+   install dependencies from NPM. Note that if you downloaded a zip archive of
+   the repo rather than cloning it you will see a warning. If that was
+   intentional then feel free to disregard the warning.
+
+### In case the setup script fails
+
+Here's everything that the setup script does in case you need to do it by hand
+for some reason. This assumes that you've already cloned the repo to the
+correct place on the computer (or acquired the code by other means).
+
+* Make sure the repo is up-to-date with `git pull`
+* Install NPM depdendencies with `npm install`
+* Download the data files into the table below to the corresponding paths
 
 ## Data Files
 
@@ -17,6 +57,8 @@ Necessary Dependencies
 |-----------------|-----------------------------------------------|
 | `bash`          | Pre-installed on Mac                          |
 | `unzip`         | Pre-installed on Mac                          |
+| `node`          | Any version 16 or later                       |
+| `npm`           | Included with Node                            |
 | `csv2json`      | Binary from [d3-dsv][] NPM package            |
 | `shp2json`      | Binary from [shapefile][] NPM package         |
 | `geo2topo`      | Binary from [topojson-server][] NPM package   |

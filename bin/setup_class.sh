@@ -10,7 +10,11 @@ cd "$ROOT_DIR"
 echo "Setting up project dependencies"
 
 echo "=> 📆 Making sure repo is up-to-date..."
-git pull
+if git pull; then
+  :
+else
+  echo "⚠️ Warning: not set up as a git repo!"
+fi
 
 echo "=> 📂 Installing Node dependencies..."
 npm install
