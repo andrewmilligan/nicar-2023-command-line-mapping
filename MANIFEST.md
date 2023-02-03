@@ -31,6 +31,7 @@ Necessary Dependencies
 | `ndjson-reduce` | Binary from [ndjson-cli][] NPM package        |
 | `ndjson-filter` | Binary from [ndjson-cli][] NPM package        |
 | `ndjson-join`   | Binary from [ndjson-cli][] NPM package        |
+| `ndjson-cat`    | Binary from [ndjson-cli][] NPM package        |
 
 [data-meta]: https://milligan.news/fileshare/nicar-2023-command-line-mapping/data/metadata.json
 [data-pop]: https://milligan.news/fileshare/nicar-2023-command-line-mapping/data/tn_population_by_tract.csv

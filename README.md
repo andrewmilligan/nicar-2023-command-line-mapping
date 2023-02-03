@@ -116,7 +116,7 @@ or reduce all the items into one summary of them all.
 First we have to split the features in our GeoJSON file into an ndjson format:
 
 ```shell
-cat work/tn_tracts_projected.geo.json \
+ndjson-cat work/tn_tracts_projected.geo.json \
   | ndjson-split 'd.features' \
   > work/tn_tracts_projected.ndjson
 ```
@@ -270,5 +270,13 @@ And then we can pipe all of those features into our SVG:
   > outputs/tn_tract_population_density_sqrt.svg
 ```
 
+## Credits
+
+This is for a hands-on course at NICAR 2023 on using command-line tools to make
+maps. The workflow used here (and the presentation of it) was heavily inspired
+by Mike Bostock's series [Command-Line Cartography][command-line-cartography].
+Definitely check that out if you haven't already!
+
 [census-geo]: https://www2.census.gov/geo/tiger/
 [census-tn-tract]: https://www2.census.gov/geo/tiger/GENZ2021/shp/cb_2021_47_tract_500k.zip
+[command-line-cartography]: https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c
