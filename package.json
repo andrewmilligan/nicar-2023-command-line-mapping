@@ -1,0 +1,26 @@
+{
+  "name": "nicar-mapping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "configure-shell": "source ./bin/configure_shell.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d3-array": "^2.0.0",
+    "d3-dsv": "^3.0.1",
+    "d3-geo": "^2.0.0",
+    "d3-geo-projection": "^4.0.0",
+    "d3-scale": "^3.0.0",
+    "d3-scale-chromatic": "^2.0.0",
+    "ndjson-cli": "^0.3.1",
+    "shapefile": "^0.6.6",
+    "topojson-client": "^3.1.0",
+    "topojson-server": "^3.0.1",
+    "topojson-simplify": "^3.0.3"
+  }
+}
